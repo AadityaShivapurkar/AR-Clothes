@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.form {
+  width: 350px;
+  height: 460px;
+  border-radius: 30px;
+  position: relative;
+  margin: 6% auto;
+  background: #f8f8f8;
+}
+.submit-button {
+/*   margin: 60% auto; */
+  position: absolute;
+  width: 60px;
+  height: 40px;
+  padding-left: 30.5%;
+}
+.addresstxt {
+/*   padding: 60% auto; */
+  background: #2196F3;
+  padding: 12px 30px;
+  text-align: center;
+  left: 140px;
+  color: #f8f8f8;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.address {
+  margin: 17% 11.5%;
+/*   position: absolute; */
+}
+.mobno {
+  margin-left: 60% auto;
+  padding-left: 40% auto;
+  position: relative;
+}
+.checkout {
+  width: 100%;
+  height: 100%;
+  background: #781ea1;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+.input {
+  padding: 13px 0px 13px 25px;
+  width: 100%;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+/*   outline: none; */
+  font-size: 16px;
+  color: #555555;
+}

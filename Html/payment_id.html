@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Payment Checkout Form</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+	<link rel="stylesheet" href="styles.css">
+  <link
+      rel="icon"
+      href="hhttps://cdn.glitch.com/606d66ce-a36d-420d-9537-5d9d6d8c0df0%2Fshirt%2016.png?v=1614580454364"
+      type="image/icon type"
+    />
+</head>
+<body>
+<div class="wrapper">
+  <div class="payment">
+    <div class="payment-logo">
+    </div>
+    
+    
+    <h2>Payment Gateway</h2>
+    <form id = "Pay" action = "https://ar-clothes-3d.glitch.me/">
+    <div class="form">
+      
+      <div class="card space icon-relative">
+        <label class="label">Card holder:</label>
+        <input type="text" class="input" placeholder="Holder Name" required>
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="card space icon-relative">
+        <label class="label">Card number:</label>
+        <input type="text" class="input" data-mask="0000 0000 0000 0000" size="12" minlength="12" placeholder="Card Number" required>
+        <i class="far fa-credit-card"></i>
+      </div>
+      <div class="card-grp space">
+        <div class="card-item icon-relative">
+          <label class="label">Expiry date:</label>
+          <input type="text" name="expiry-date" class="input" data-mask="00 / 00"  placeholder="00 / 00"   required>
+          <i class="far fa-calendar-alt"></i>
+        </div>
+        <div class="card-item icon-relative">
+          <label class="label">CVC:</label>
+          <input type="da" class="input" data-mask="000" size="3" minlength="3" placeholder="000" required>
+          <i class="fas fa-lock"></i>
+        </div>
+      </div>
+        
+      <center><button type= "submit" value="Submit"><div class="btn">Pay
+  
+        </div></button></center> 
+      
+    </div>
+    </form>
+  </div>
+</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+</body>
+</html>
