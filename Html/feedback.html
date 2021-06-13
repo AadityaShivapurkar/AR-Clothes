@@ -1,0 +1,85 @@
+<head>
+  <link rel="stylesheet" href="feedback.css" />
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #FF0000;
+      position: sticky;
+      top: 0;
+      right: 0;
+    }
+
+    .shadow {
+      position: sticky;
+      box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.75);
+    }
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .home {
+      text-align: center;
+    }
+    .topnav a:hover {
+      background-color: #FF0000;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: #FF0000;
+      color: white;
+    }
+  </style>
+  <script src="/client.js" defer></script>
+  <link
+    rel="icon"
+    href="https://cdn.glitch.com/606d66ce-a36d-420d-9537-5d9d6d8c0df0%2Fshirt%2016.png?v=1614580454364"
+    type="image/icon type"
+  />
+</head>
+<h1
+  style="display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40;"
+>
+  We would love to hear from you!
+</h1>
+<form id="feedback" name="myform" onsubmit="feedback_submit()" >
+  <input
+    name="name"
+    type="text"
+    class="feedback-input"
+    placeholder="Name"
+    required
+  />
+  <input
+    name="email"
+    type="text"
+    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+    class="feedback-input"
+    placeholder="Email"
+    required
+  />
+  <textarea name="text" class="feedback-input" placeholder="Comment" required></textarea>
+  <input type="submit" value="SUBMIT" />
+</form>
+<script>
+  document.getElementById("feedback").onsubmit = event => {
+    // stop our form submission from refreshing the page
+    event.preventDefault();
+    alert("Your valuable feedback has been duly noted :)");
+    window.location = "https://ar-clothes-3d.glitch.me/";
+  };
+</script>
